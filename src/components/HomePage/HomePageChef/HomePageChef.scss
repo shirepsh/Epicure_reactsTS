@@ -1,0 +1,367 @@
+// .chef-data {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-right: 20px;
+
+//   .chef-image-data {
+//     background: url("../../../../public/images/Chefs/YossiS.png");
+//     min-width: 370px;
+//     height: 262px;
+//     background-size: cover;
+//     position: relative;
+//     object-fit: cover;
+//     margin-bottom: 26px;
+
+//     .chef-name-box {
+//       width: 370px;
+//       height: 51px;
+//       background-color: rgba(255, 255, 255, 0.58);
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       position: absolute;
+//       bottom: 0;
+//       font-family: "Helvetica Neue", sans-serif;
+//       font-size: 20px;
+//       font-weight: 400;
+//       line-height: 47px;
+//       letter-spacing: 2.6700000762939453px;
+//       text-align: center;
+//     }
+//   }
+
+//   .chef-description {
+//     font-family: "Helvetica Neue";
+//     line-height: 28px;
+//     font-weight: 200;
+//     font-size: 18px;
+//     letter-spacing: 1.25px;
+//     text-align: justify;
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .chef-rests-label {
+//   font-family: "Helvetica Neue", sans-serif;
+//   font-size: 18px;
+//   font-weight: 200;
+//   line-height: 25px;
+//   letter-spacing: 1.25px;
+//   text-align: left;
+// }
+
+// @media only screen and (min-width: 768px) {
+//   .chef-data {
+//     display: flex;
+//     flex-direction: row;
+//     margin-left: 0px;
+
+//     .chef-image-data {
+//       background: url("../../../../public/images/Chefs/YossiSDesk.png");
+//       min-width: 480px;
+//       height: 370px;
+//       // margin-left: 200px;
+//       display: flex;
+//       // margin-left: 25px;
+//       object-fit: cover;
+
+
+//       .chef-name-box {
+//         display: none;
+//       }
+//     }
+
+//       .chef-description {
+//         font-size: 24px;
+//         line-height: 35px;
+//         width: 642px;
+//         height: 255px;
+//         margin-left: 63px;
+//         margin-top: -60px;
+//       }
+    
+//   }
+
+//   .chef-rests-label {
+//     font-family: "Helvetica Neue", sans-serif;
+//     font-size: 30px;
+//     font-weight: 200;
+//     line-height: 35px;
+//     letter-spacing: 1.25px;
+//     text-align: left;
+//     margin-left: 127px;
+//   }
+// }
+
+// // ///////////////////////////////////////////////////////////////////////////////////////
+// // second part - chef restaurants
+// .headline-chef-hub-div {
+
+//   .homepage-chef-hub-div {
+//     ::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+
+//   .custom-homepage-chef-container {
+//     display: flex;
+//     overflow-y: hidden;
+//     margin-bottom: 13px;
+//     margin-top: 16px;
+
+//     .custom-chef-res-item {
+//       margin-right: 24px;
+//       background-color: #f9f4ea;
+//       width: 245px;
+//       height: 230px;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       justify-content: center;
+//       padding-bottom: 20px;
+
+//       img{
+//         width: 245px;
+//         height: 155px;
+//         text-align: center;
+//         object-fit: cover;
+//       }
+
+//       p{
+//         font-family: Helvetica Neue;
+//         font-size: 18px;
+//         font-weight: 400;
+//         line-height: 22px;
+//         letter-spacing: 2.67px;
+//         margin-left: 16px;
+//       }
+//     }
+
+//   }
+
+//   @media only screen and (min-width: 768px) {
+
+
+
+//     .custom-homepage-chef-container {
+//       margin-top: 40px;
+//       margin-left: 127px;
+
+//       .custom-chef-res-item {
+//         min-width: 231px;
+//         height: 357px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: flex-start;
+
+//         img{
+//           width: 100%;
+//           height: 224px;
+//           margin-bottom: 20px;
+//         }
+
+//         p{
+//           width: 118px;
+//           height: 94px;
+//           font-size: 30px;
+//           font-weight: 400;
+//           line-height: 47px;
+//           letter-spacing: 2.67px;
+//           margin-top: 5px;
+//         }
+//       }
+
+//       .custom-chef-res-item:nth-child(-n + 3) {
+//         display: flex;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+.chef-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+
+  .chef-image-data {
+    background: url("../../../../public/images/Chefs/YossiS.png");
+    min-width: 370px;
+    height: 262px;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 26px;
+
+    .chef-name-box {
+      width: 370px;
+      height: 51px;
+      background-color: rgba(255, 255, 255, 0.58);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 2.6700000762939453px;
+      text-align: center;
+    }
+  }
+
+  .chef-description {
+    font-family: "Helvetica Neue";
+    line-height: 28px;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    text-align: justify;
+    margin-bottom: 32px;
+  }
+}
+
+.chef-rests-label {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1.25px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .chef-data {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+
+    .chef-image-data {
+      background: url("../../../../public/images/Chefs/YossiSDesk.png");
+      min-width: 480px;
+      height: 370px;
+      // margin-left: 200px;
+      display: flex;
+      // margin-left: 25px;
+      object-fit: cover;
+
+
+      .chef-name-box {
+        display: none;
+      }
+    }
+
+      .chef-description {
+        font-size: 24px;
+        line-height: 35px;
+        width: 642px;
+        height: 255px;
+        margin-left: 63px;
+        margin-top: -60px;
+      }
+    
+  }
+
+  .chef-rests-label {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    text-align: left;
+    margin-left: 127px;
+  }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+// second part - chef restaurants
+.headline-chef-hub-div {
+
+  .homepage-chef-hub-div {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .custom-homepage-chef-container {
+    display: flex;
+    overflow-y: hidden;
+    margin-bottom: 13px;
+    margin-top: 16px;
+
+    .custom-chef-res-item {
+      margin-right: 24px;
+      background-color: #f9f4ea;
+      width: 245px;
+      height: 230px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-bottom: 20px;
+
+      img{
+        width: 245px;
+        height: 155px;
+        text-align: center;
+        object-fit: cover;
+      }
+
+      p{
+        font-family: Helvetica Neue;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 2.67px;
+        margin-left: 16px;
+      }
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+
+    .custom-homepage-chef-container {
+      margin-top: 40px;
+      margin-left: 127px;
+
+      .custom-chef-res-item {
+        min-width: 231px;
+        height: 357px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        img{
+          width: 100%;
+          height: 224px;
+          margin-bottom: 20px;
+        }
+
+        p{
+          width: 118px;
+          height: 94px;
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 47px;
+          letter-spacing: 2.67px;
+          margin-top: 5px;
+        }
+      }
+
+      .custom-chef-res-item:nth-child(-n + 3) {
+        display: flex;
+      }
+    }
+  }
+}

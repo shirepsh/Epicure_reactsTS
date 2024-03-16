@@ -1,0 +1,63 @@
+.main{
+    overflow-x: hidden;
+
+    .searchBox{
+      margin-bottom: 48px;
+    }
+
+    .second-main{
+      margin-left: 20px;
+    }
+
+    .homepageLabels {
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 24px;
+      letter-spacing: 1.25px;
+      margin-bottom: 17px;
+    }
+
+    .all-res-btn {
+      border: none;
+      background: none;
+      margin-bottom: 45px;
+    }
+
+    .icons-div{
+      margin-bottom: 48px;
+    }
+
+    .chef-main{
+      margin-left: 20px;
+    }
+  
+}
+
+ 
+@media (min-width: 800px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .homepageLabels {
+      font-size: 30px;
+      line-height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .all-res-btn {
+      margin-left: 1020px;
+      img {
+        width: 250px;
+        height: 50px;
+      }
+    }
+  
+   
+  }
+}

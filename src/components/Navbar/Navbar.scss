@@ -1,0 +1,154 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  .left-items-mobile{
+    img{
+      margin-left: 2vw;
+      align-items: center;
+      margin-top: 1vw;
+      width: 6vw;
+      margin-top: 2vw;
+    }
+  }
+
+  .center-item {
+    img{
+      text-align: center;
+      flex-grow: 1; 
+      justify-content: center;
+      align-items: center;
+      margin-top: 1vw;
+      margin-left: 20vw;
+      width: 7vw;
+    }
+  }
+  
+  .right-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img{
+      width: 6vw;
+    }
+
+    .items-amount{
+      position: absolute;
+      top: 35%; 
+      right: 15%; 
+      transform: translate(50%, -50%);
+     
+      img{
+        width: 3vw;
+      }
+
+      .order-length{
+        position: absolute; 
+        top: 40%; 
+        left: 55%; 
+        transform: translate(-50%, -50%);
+        font-family: Helvetica Neue;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 10px;
+        letter-spacing: 1.2899999618530273px;
+        text-align: left;
+        color: white;
+      }
+    }
+  }
+
+  // space between the rights items
+  .right-items > * {
+      margin-right: 4vw; 
+    }
+
+
+@media only screen and (min-width: 768px)  {
+  height: 3vw;
+    .left-items-desk {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-left:3vw;
+
+      .aboutImgDesk {
+        width: 2vw; 
+      }
+
+      .epc-desk-btn{
+        font-family: "Helvetica Neue";
+        font-size: 1.2vw;
+        font-weight: 200;
+        line-height: 33px;
+        letter-spacing: 1.35px;
+        text-align: left;
+        color: black;
+        width: 1.5vw;
+        border: none;
+        background: none;
+        margin-left: 0.5vw;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 1vw; 
+      }
+
+      .desk-btn{
+        font-family: "Helvetica Neue";
+        font-size: 0.8vw;
+        font-weight: 200;
+        line-height: 22px;
+        letter-spacing: 1.92px;
+        text-align: left;
+        color: black;
+        width: 1.5vw;
+        border: none;
+        background: none;
+        margin-left: 4vw;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 1vw; 
+        margin-top: 0.1vw;
+      }
+
+      .desk-btn.active,
+      .epc-desk-btn.active {
+        position: relative;
+      }
+
+      .desk-btn.active::after,
+      .epc-desk-btn.active::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: orange;
+      }
+    }
+
+    .right-items {
+      display: flex;
+      align-items: center;
+      margin-right:3vw;
+
+      .searchImgDesk,
+      .vectorImgDesk,
+      .itemAmountImgDesk,
+      .bagImgDesk{
+        width: 1.5vw;
+      }
+    }
+    
+    //space between th eicons
+    .right-items > * {
+      margin-right: 2vw; 
+    }
+}
+}
+
+
+

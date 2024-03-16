@@ -1,0 +1,236 @@
+.res-page-general {
+  // RESTAURANT GENERIC DATA SCSS
+  .restaurant-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .res-page-data {
+    margin-left: 20px;
+
+    .res-page-res-name {
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 2.67px;
+      text-align: left;
+    }
+
+    .res-page-chef-name {
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 20px;
+      letter-spacing: 1.97px;
+      text-align: left;
+    }
+
+    .res-page-clock {
+      display: flex;
+      flex-direction: row;
+ 
+
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 20px;
+      letter-spacing: 1.97px;
+      margin-bottom: 32px;
+
+      img{
+        margin-right: 10px;
+      }
+    }
+
+    //BUTTONS SCSS
+    .meals-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .meals-buttons button {
+      color: black;
+      border: none;
+      background-color: transparent;
+      position: relative;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 22px;
+      letter-spacing: 1.92px;
+      text-align: left;
+    }
+
+    .meals-buttons button::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+    }
+
+    .meals-buttons button.active {
+      font-weight: 400;
+    }
+
+    .meals-buttons button.active::after {
+      background-color: orange;
+    }
+
+    // DISHES SCSS
+    .restaurant-dishes {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+      margin-bottom: 30px;
+
+      .card-dish-div {
+        width: 360px;
+        height: auto;
+        margin-bottom: 22px;
+
+        .dish-img {
+          width: 360px;
+          margin-bottom: 16px;
+        }
+
+        .card-dish-name {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          margin-left: 15px;
+        }
+
+        .card-dish-name a{
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .card-dish-ing {
+          margin-left: 15px;
+          width: 310px;
+
+        }
+
+        .price-h {
+
+          img{
+            margin-right: 2px;
+          }
+          margin-bottom: 16px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////////////////////////////////
+  @media only screen and (min-width: 768px) {
+    // RESTAURANT GENERIC DATA SCSS
+    .restaurant-image {
+      width: 1186px;
+      height: 425px;
+      position: absolute;
+      top: 75px;
+      left: 127px;
+      object-fit: cover;
+    }
+
+    .res-page-data {
+      margin: auto 0px;
+   
+      .res-page-res-name {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 3.67px;
+        text-align: center;
+        margin-top: 460px;
+        margin-bottom: 44px;
+      }
+
+      .res-page-chef-name {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin-top: -40px;
+        margin-bottom: 68px;
+      }
+
+      .res-page-clock {
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        margin-top: -32px;
+        margin-bottom: 48px;
+      }
+
+      //BUTTONS SCSS
+      .meals-buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+      }
+
+      .meals-buttons button {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    
+      .meals-buttons button.active {
+        font-weight: 200;
+      }
+
+      // DISHES SCSS
+      .restaurant-dishes {
+        width: 1250px;
+        // height: 1125px;
+        display:flex;
+        margin-left: 127px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .card-dish-div {
+          width: 270px;
+          height: 413px;
+          display: flex;
+          justify-content: flex-start;
+          margin-right: 32px;
+          margin-bottom: 31px;
+
+          .dish-img {
+            width: 270px;
+            height: 170px;
+            object-fit: cover;
+            margin-bottom: 24px;
+          }
+
+          .card-dish-name {
+            font-size: 24px !important;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 2.67px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+          }
+
+          .card-dish-ing {
+            width: 250px;
+          }
+
+          .price-h {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}

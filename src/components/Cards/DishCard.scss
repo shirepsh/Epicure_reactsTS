@@ -1,0 +1,165 @@
+.card-dish-div {
+  width: 245px;
+  height: 400px;
+  background-color: #f9f4ea;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  img {
+    width: 245px;
+    margin-left: 0px;
+  }
+
+  .card-dish-name {
+    width: 300px;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    text-align: left;
+    display: block;
+    margin-top: auto;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-dish-ing {
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 1.9700000286102295px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .icon-div {   
+    img{
+    width: 29.82px;
+    height: 22.98px;
+    margin-left: 15px;
+    }
+}
+    
+
+  .price-h {
+    display: flex;
+    align-items: center;
+
+    .card-dish-price {
+      font-family: Helvetica Neue;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 1.9700000286102295px;
+      text-align: center;
+      margin-right: 5px;
+    }
+
+    img {
+      width: 10px;
+      height: 20px;
+      margin-bottom: -5px;
+      margin-right: 5px;
+    }
+
+    .line {
+      width: 80%;
+      height: 0.5px;
+      margin-bottom: 5px;
+      background-color: rgba(151, 151, 151, 1);
+    }
+  }
+
+
+@media only screen and (min-width: 768px) {
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-dish-name {
+      font-size: 24px !important;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    .card-dish-ing {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    .line-with-value {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      width: 90%;
+      flex-direction: row;
+
+      .card-dish-price {
+        font-family: Helvetica Neue;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1.9700000286102295px;
+        text-align: center;
+        margin-right: 5px;
+      }
+
+      img {
+        width: 10px;
+        height: 20px;
+        margin-bottom: -5px;
+        margin-right: 5px;
+      }
+
+      .line {
+        width: 30%;
+        flex-grow: 1;
+        height: 1px;
+        background-color: #979797;
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+
+//   {/* future css */}
+//       {/* .icon-div img {
+//         width: 40px;
+//         height: 31px;
+//         padding: 0px 0.24px 1.32px 0px;
+//         margin-top: -10px;
+//       }
+
+
+//       .icon-div {
+//         img {
+//           width: 29.82px;
+//           height: 22.98px;
+//           margin-left: 15px;
+//           margin-top: 10px;
+//         }
+    
+//         a {
+//           font-family: Helvetica Neue;
+//           font-size: 16px;
+//           font-weight: 400;
+//           line-height: 19px;
+//           letter-spacing: 1.97px;
+//           text-align: left;
+//           margin-top: 7px;
+//         }
+//       }
+//       } */}
+
+

@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #000000; 
+  --secondary-color: #979797; 
+  --background-color: #F9F4EA; 
+  --accent-color: #E19D1A; 
+  --text-color: #FAFAFA; 
+}
+
+/* Mobile Styles (iPhone X) */
+
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 24px;
+  color: var(--primary-color); 
+}
+
+h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 16px;
+  color: var(--primary-color); 
+}
+
+h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: normal; 
+  font-size: 18px;
+  color: var(--primary-color); 
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 16px;
+  color: var(--primary-color); 
+}
+
+button {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 16px;
+  color: var(--text-color); 
+  background-color: var(--primary-color); 
+}
+
+input[type="text"] {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 16px;
+  color: var(--primary-color); 
+}
+
+label {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100; 
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+/* Desktop Styles (1440px) */
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  input[type="text"] {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,139 @@
+.headline-dish-hub-div {
+  margin-top: 20px;
+  font-family: Helvetica Neue;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  text-align: left;
+  margin-left: 0px;
+
+  .dish-hub-div {
+    margin-top: 0;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .dish-carousel-container {
+    display: flex;
+    overflow-y: hidden;
+    margin-bottom: 45px;
+
+    .card-dish-div {
+      width: 245px;
+      height: 430px;
+      margin-right: 24px;
+      margin-top: 0px;
+
+      .dish-img{
+        margin-bottom: 16px;
+      }
+
+      .card-dish-name {
+        margin-left: 15px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+      }
+
+      .card-dish-ing {
+        margin-left: 15px;
+        width: 200px;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      .icon-div {
+        margin-bottom: -10px;
+        img {
+          width: 30px;
+          height: 25px;
+          margin-left: 15px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .price-h {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    
+        img {
+          width: 10px;
+          height: 20px;
+          margin-bottom: -5px;
+          margin-right: 5px;
+        }
+    
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .dish-hub-div {
+      overflow-x: hidden;
+    }
+
+    .dish-carousel-container {
+      justify-content: center;
+      margin-bottom: 40px;
+
+      .card-dish-div {
+        width: 380px;
+        height: 650px;
+        margin-right: 24px;
+        margin-top: 0px;
+        justify-content: flex-start;
+  
+        .dish-img {
+          width: 380px;
+          height: 306px;
+          margin-bottom: 16px;
+        }
+
+        .card-dish-name {
+          font-size: 40px !important;
+          width: 163px;
+          height: 94px;
+          font-weight: 400px;
+          line-height: 47px;
+          letter-spacing: 2.67px;
+        }
+
+        .icon-div {
+          img {
+            width: 40px;
+            height: 31px;
+      
+          }
+        }
+
+        .card-dish-ing {
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 1.97px;
+          width: 295px;
+          height: 123px;
+          margin-bottom: 16px;
+        }
+
+        .line-with-value {
+          margin-bottom: 5px;
+          .card-dish-price{
+            font-size: 24px;
+            font-weight: 200;
+          }
+
+          img{
+            width: 14px;
+            height: 19px;
+          }
+        }
+        }
+  }
+  }
+}

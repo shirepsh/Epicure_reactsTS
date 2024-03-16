@@ -1,0 +1,155 @@
+.restaurant-container{
+  margin-left: 20px;
+}
+
+  .res-res-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 1.92px;
+    text-align: left;
+    margin-top: 24px;
+  }
+ 
+  .restaurant-grid{
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 600px;
+    overflow-y: auto;
+    
+    .card-res-div{
+      width: 370px;
+
+      img{
+        width: 370px;
+        object-fit: cover;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 24px;
+    margin-right: 13px;
+    margin-bottom: 32px;
+  }
+  
+  .filter-buttons button {
+    color:black;
+    border: none; 
+    background-color: transparent; 
+    position: relative; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 1.92px;
+    text-align: left;
+    
+  }
+  
+  .filter-buttons button::after {
+    content: '';
+    position: absolute; 
+    bottom: -3px; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+  }
+  
+  .filter-buttons button.active {
+    font-weight: 400; 
+  }
+  
+  .filter-buttons button.active::after {
+    background-color: orange; 
+  }
+  
+  //////////////////////////////////////////////////////////////////////////////////////////
+  @media only screen and (min-width: 768px) {
+
+    .filter-buttons {
+      justify-content: center;
+    }
+  
+    .filter-buttons button {
+      margin: 10px; 
+    }
+
+    .filter-buttons button::after {
+      content: '';
+      position: absolute; 
+      bottom: -3px; 
+      left: 0; 
+      width: 100%; 
+      height: 2px; 
+      background-color: transparent; 
+    }
+    
+    .filter-buttons button.active {
+      font-weight: 400; 
+    }
+
+    .filter-buttons button.active::after {
+      background-color: white; 
+    }
+
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 24px; 
+      text-align: center;
+      margin-bottom: 30px;
+      margin-right: 45px;
+      max-width: 1185px;
+      margin-left: 127px;
+      margin-right: 120px;
+      overflow-x: hidden;
+      height: 750px;
+      // margin-bottom: 200px;
+    
+      .card-res-div {
+        margin-bottom: 20px;
+        height: 400px;
+
+        img {
+          width: 100%; 
+          object-fit: cover;
+          margin-bottom: -8px;
+        }
+
+        h2{
+          margin-bottom: 28px ;
+        }
+
+        .stars-div{
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .res-map{
+        display: grid;
+        text-align: center;
+        // justify-content: flex-start;
+        margin-left: 100px;
+        margin-top: -40px;
+        width: 1250px;
+        margin-bottom: 140px;
+        height: 680px;
+        
+    }
+    
+  }
